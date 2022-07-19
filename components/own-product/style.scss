@@ -1,0 +1,34 @@
+.ownProduct {
+  background: $colorBlue;
+  color: $colorWhite;
+  padding: 76px 0;
+
+  .ownProduct-content {
+    width: 980px;
+    margin-left: 0 !important;
+
+    p:last-child {
+      padding-top: 22px;
+    }
+
+    .button-box__light {
+      margin-top: 60px !important;
+
+      button {
+        margin-left: 0 !important;
+      }
+
+      span {
+        color: $colorBlue;
+      }
+    }
+  }
+
+  .decor {
+    position: absolute;
+    right: -100px;
+    top: -56px;
+    width: 840px;
+    height: 532px;
+  }
+}

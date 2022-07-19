@@ -1,0 +1,60 @@
+.verification {
+  background: $colorBlue;
+  color: $colorWhite;
+  padding-top: 115px;
+  padding-bottom: 130px;
+
+  .verification-content {
+    .input {
+      width: 77%;
+
+      input.form-control {
+        text-align: center;
+        font-size: 18px;
+        line-height: 100%;
+        color: $colorWhite;
+        width: 100%;
+        height: 54px;
+        padding: 0 !important;
+        border: 1px solid $colorWhite;
+        border-radius: 12px;
+        background: transparent;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+
+    .button-verification {
+      width: 20%;
+      margin-left: 3%;
+
+      .submit-code {
+        @include button-landing;
+        background: $colorWhite;
+        color: $colorBlue !important;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .submit-code:hover {
+        color: $colorWhite !important;
+      }
+    }
+
+    ::placeholder,
+    ::-webkit-input-placeholder {
+      @include Roboto_Regular;
+      padding: 0 28px;
+      font-size: 18px;
+      line-height: 100%;
+      color: $colorWhite;
+      text-align: left;
+      transition: all $transitin-timles;
+    }
+
+    :focus::placeholder,
+    :focus::-webkit-input-placeholder {
+      font-size: 0;
+    }
+  }
+}

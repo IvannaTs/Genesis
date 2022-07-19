@@ -1,0 +1,72 @@
+.team {
+  position: relative;
+  padding-top: 229px;
+  color: $colorDark;
+  background: $colorWhite;
+
+  .line-decor {
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+
+  .team-box {
+    width: 50%;
+    padding-right: 32px;
+
+    .team-subtitle {
+      padding-bottom: 60px;
+    }
+
+    ul {
+      padding: 0 !important;
+      margin: 0 !important;
+      list-style: none !important;
+
+      li {
+        padding-bottom: 20px;
+      }
+    }
+
+    b {
+      @include Roboto_SemiBold;
+    }
+  }
+
+  .team-logos {
+    margin-top: 100px !important;
+    height: 50px;
+
+    ul {
+      list-style: none;
+      @include justify-center;
+
+      // column-count: 4;
+      li {
+        display: block;
+        margin-left: 42px;
+
+        img {
+          margin: auto;
+          mix-blend-mode: luminosity;
+        }
+      }
+
+      li:first-child {
+        margin-left: 0;
+      }
+
+    }
+
+  }
+}
+
+@include _991 {
+  ul {
+    flex-wrap: wrap;
+    li {
+      margin-left: 32px;
+      padding-bottom: 20px !important;
+    }
+  }
+}

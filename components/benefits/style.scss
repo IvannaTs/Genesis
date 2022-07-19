@@ -1,0 +1,42 @@
+.benefits {
+  background: $colorWhite;
+  padding-top: 98px;
+  padding-bottom: 125px;
+  color: $colorBlue;
+
+  .benefit-1 {
+    width: 57.4%;
+  }
+
+  .benefit-2 {
+    width: 38.8%;
+  }
+
+  .benefit-3 {
+    width: 43.3%;
+  }
+}
+
+.item {
+  padding: 16px 28px;
+  border: 1px solid $colorBlue;
+  border-radius: 12px;
+  display: flex;
+  margin-bottom: 28px !important;
+  margin-left: 28px !important;
+
+  img {
+    width: 57px;
+    height: 57px;
+  }
+
+  h4 {
+    @include justify-center;
+    padding-left: 10px;
+  }
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+  margin-left: 0 !important;
+}

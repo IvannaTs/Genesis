@@ -1,0 +1,105 @@
+.wrap {
+  background: $colorWhite;
+  padding-top: 119px;
+  padding-bottom: 147px;
+}
+
+.experts {
+  .container-landing {
+    position: relative;
+  }
+  .title-section {
+    color: $colorBlue;
+  }
+
+  .navigation-arrow {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 110px;
+    height: 22px;
+
+    img {
+      display: inline;
+      width: 38px;
+      height: 22px;
+    }
+    .next {
+      float: right;
+    }
+  }
+
+  .carousel {
+    position: relative;
+    z-index: 3;
+
+    .slide {
+      margin-left: 30px !important;
+
+      img.photo {
+        width: 255px;
+        height: 255px;
+        border-radius: 12px 12px 0px 0px;
+      }
+
+      .expert-name {
+        width: 255px;
+        height: 89px;
+        margin-top: 11px !important;
+        background: $colorBlue;
+        color: $colorWhite;
+        border-radius: 0px 0px 12px 12px;
+        padding: 16px;
+
+      }
+    }
+
+    .slide:first-child {
+      margin-left: 0 !important;
+    }
+  }
+
+  /* Slider */
+  section.VueCarousel {
+    overflow: visible !important;
+  }
+
+  .VueCarousel-navigation-button {
+    padding: 0 !important;
+  }
+
+  .VueCarousel-navigation--disabled[data-v-7fed18e9] {
+    opacity: 1 !important;
+  }
+
+  .VueCarousel-navigation-prev[data-v-7fed18e9] {
+    left: -5%;
+  }
+
+  .VueCarousel-navigation-next[data-v-7fed18e9] {
+    right: 5% !important;
+  }
+
+  .material-icons_left,
+  .material-icons_right {
+    width: 80px !important;
+    height: 80px !important;
+    position: absolute;
+    color: transparent;
+    cursor: pointer !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('assets/img/experts/arrow-prew.svg') !important;
+  }
+
+  .material-icons_right {
+    background-image: url('assets/img/experts/arrow-next.svg') !important;
+  }
+
+  .material-icons_left:active,
+  .material-icons_right:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+}

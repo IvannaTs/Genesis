@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'components/intro/style.scss';
+@import 'components/benefits/style.scss';
+@import 'components/own-product/style.scss';
+@import 'components/promo/style.scss';
+@import 'components/whom/style.scss';
+@import 'components/content/style.scss';
+@import 'components/experts/style.scss';
+@import 'components/team/style.scss';
+@import 'components/verification/style.scss';
+
+
+
+body {
+  @include Roboto_Regular;
+}
+
+.landing {
+  background: $colorWhite;
+}
+
+.inner {
+  @include inner;
+}
+
+.container-landing {
+  @include container-landing;
+}
+
+.inner-flex {
+  @include inner-flex;
+}
+
+.landing h1 {
+  @include text-h1;
+}
+
+.landing h2 {
+  @include text-h2;
+}
+
+.landing h3 {
+  @include text-h3;
+}
+
+.landing h4 {
+  @include text-h4;
+}
+
+.landing h5 {
+  @include text-h5;
+}
+
+.landing h6 {
+  @include text-h6;
+}
+
+.landing p {
+  @include text-p;
+}
+
+.proceed-to-course-button {
+  @include button-landing;
+}
+
+.button-box__light .proceed-to-course-button:hover,
+.submit-code:hover {
+  border: 1px solid $colorWhite !important;
+  background: transparent !important;
+  color: $colorWhite !important;
+}
+
+.button-box__light .proceed-to-course-button:hover span {
+  color: $colorWhite;
+}
+
+.proceed-to-course-button:hover {
+  transform: scale(1.02);
+}
+
+.proceed-to-course-button:active,
+.submit-code:active {
+  transform: scale(0.98);
+}
+
+.title-section {
+  width: 560px;
+  padding-bottom: 52px;
+}

@@ -7,10 +7,67 @@
   .whom-1 {
     width: 31.4%;
   }
+
   .whom-2 {
     width: 54%;
   }
+
   .whom-3 {
     width: 46.7%;
+  }
+}
+
+@include _1024 {
+  .whom {
+    padding-top: 96px;
+    padding-bottom: 77px;
+
+    .whom-1 {
+      width: 42%;
+    }
+
+    .whom-2 {
+      width: 54%;
+    }
+
+    .whom-3 {
+      width: 51%;
+    }
+  }
+}
+
+@include _768 {
+  .whom {
+    .whom-2 {
+      margin-left: 23px !important;
+    }
+  }
+}
+
+@include _650 {
+  .whom {
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    .whom-1 {
+      width: 75%;
+    }
+
+    .whom-2 {
+      width: 88%;
+      margin-left: 0 !important;
+    }
+
+    .whom-3 {
+      width: 100%;
+    }
+  }
+}
+
+@include _468 {
+  .whom {
+    .whom-box {
+      width: 100%;
+    }
   }
 }

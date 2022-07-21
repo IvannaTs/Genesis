@@ -1,8 +1,8 @@
 .benefits {
   background: $colorWhite;
+  color: $colorBlue;
   padding-top: 98px;
   padding-bottom: 125px;
-  color: $colorBlue;
 
   .benefit-1 {
     width: 57.4%;
@@ -12,12 +12,14 @@
     width: 38.8%;
   }
 
-  .benefit-3 {
+  .benefit-3,
+  .benefit-4 {
     width: 43.3%;
   }
 }
 
 .item {
+  @include justify-center;
   padding: 16px 28px;
   border: 1px solid $colorBlue;
   border-radius: 12px;
@@ -26,17 +28,107 @@
   margin-left: 28px !important;
 
   img {
+    margin-bottom: auto;
     width: 57px;
     height: 57px;
   }
 
   h4 {
-    @include justify-center;
     padding-left: 10px;
   }
 }
 
-.item:nth-child(1),
-.item:nth-child(3) {
+.landing .item:nth-child(1),
+.landing .item:nth-child(3) {
   margin-left: 0 !important;
+}
+
+@include _1024 {
+  .benefits {
+    padding-top: 88px;
+    padding-bottom: 115px;
+  }
+
+  .landing .item {
+    padding: 14px 20px;
+    margin-bottom: 23px !important;
+    margin-left: 23px !important;
+
+    img {
+      width: 55px;
+      height: 55px;
+    }
+
+    h4 {
+      padding-left: 8px;
+    }
+  }
+}
+
+@include _768 {
+  .benefits {
+
+    .benefit-1 {
+      width: 90%;
+    }
+
+    .benefit-2 {
+      width: 65%;
+    }
+
+    .benefit-3 {
+      width: 49%;
+    }
+
+    .benefit-4 {
+      width: 46%;
+    }
+  }
+
+  .benefits .item:nth-child(2) {
+    margin-left: 0 !important;
+  }
+}
+
+@include _650 {
+  .benefits {
+    padding-top: 70px;
+    padding-bottom: 95px;
+
+    .benefit-1 {
+      width: 98%;
+    }
+
+    .benefit-2 {
+      width: 77%;
+    }
+
+    .benefit-3 {
+      width: 91%;
+    }
+
+    .benefit-4 {
+      width: 57%;
+    }
+
+  }
+
+  .landing .item {
+    padding: 12px 17px;
+    margin-bottom: 18px !important;
+    margin-left: 0 !important;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@include _468 {
+  .benefits {
+    .benefit-box {
+      width: 100%;
+    }
+  }
 }

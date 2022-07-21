@@ -4,3 +4,11 @@
     height: 700px;
   }
 }
+
+@include _1024 {
+  .promo {
+    .promo-video {
+      height: 60vh;
+    }
+  }
+}

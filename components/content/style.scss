@@ -3,40 +3,147 @@
   color: $colorWhite;
   padding-top: 115px;
   padding-bottom: 78px;
+
   .content-box {
     @include justify-center;
     padding: 16px 28px;
     border: 1px solid $colorWhite;
     border-radius: 12px;
     margin-bottom: 28px !important;
+
     h6 {
       margin: auto;
     }
   }
+
   .content-box:nth-child(1) {
     width: 51%;
   }
+
   .content-box:nth-child(3) {
     width: 50%;
   }
+
   .content-box:nth-child(2) {
     width: 45%;
   }
+
   .content-box:nth-child(4) {
     width: 39%;
   }
+
   .content-box:nth-child(5) {
     width: 62%;
   }
+
   .content-box:nth-child(6) {
     width: 24%;
   }
+
   .content-box:nth-child(2),
   .content-box:nth-child(4),
   .content-box:nth-child(6) {
     margin-left: 2.5%;
   }
+
   .button-box__light {
     margin-top: 31px !important;
+  }
+}
+
+@include _1024 {
+  .content {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    .content-box {
+      padding: 14px 20px;
+      margin-bottom: 23px !important;
+    }
+
+    .content-box:nth-child(1) {
+      width: 40%;
+    }
+
+    .content-box:nth-child(2) {
+      width: 56%;
+    }
+
+    .content-box:nth-child(3) {
+      width: 52%;
+    }
+
+    .content-box:nth-child(4) {
+      width: 43%;
+    }
+
+    .content-box:nth-child(5) {
+      width: 62%;
+    }
+
+    .content-box:nth-child(6) {
+      width: 32%;
+    }
+
+    .content-box:nth-child(2),
+    .content-box:nth-child(4),
+    .content-box:nth-child(6) {
+      margin-left: 2%;
+    }
+
+    .button-box__light {
+      margin-top: 27px !important;
+    }
+  }
+}
+
+@include _768 {
+  .content {
+    .title-section {
+      width: 85%;
+    }
+  }
+}
+
+@include _650 {
+  .content {
+    padding-top: 80px;
+
+    .content-box {
+      padding: 12px 17px;
+      margin-bottom: 18px !important;
+    }
+
+    .button-box__light {
+      margin-top: 25px !important;
+    }
+  }
+}
+
+@include _468 {
+  .content {
+    .content-box:nth-child(1) {
+      width: 43%;
+    }
+
+    .content-box:nth-child(2) {
+      width: 55%;
+    }
+
+    .content-box:nth-child(3) {
+      width: 60%;
+    }
+
+    .content-box:nth-child(4) {
+      width: 38%;
+    }
+
+    .content-box:nth-child(5) {
+      width: 65%;
+    }
+
+    .content-box:nth-child(6) {
+      width: 33%;
+    }
   }
 }

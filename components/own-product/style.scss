@@ -7,7 +7,7 @@
     width: 980px;
     margin-left: 0 !important;
 
-    p:last-child {
+    .mrgn {
       padding-top: 22px;
     }
 
@@ -30,5 +30,51 @@
     top: -56px;
     width: 840px;
     height: 532px;
+  }
+}
+
+@include _1024 {
+  .ownProduct {
+    padding: 70px 0;
+
+    .ownProduct-content {
+      width: 100%;
+
+      .mrgn {
+        padding-top: 18px;
+      }
+
+      .button-box__light {
+        margin-top: 55px !important;
+      }
+    }
+
+    .decor {
+      right: -80px;
+      top: -76px;
+      width: 820px;
+      height: auto;
+    }
+  }
+}
+
+@include _650 {
+  .ownProduct {
+    .ownProduct-content {
+
+      .mrgn {
+        padding-top: 15px;
+      }
+
+      .button-box__light {
+        margin-top: 50px !important;
+      }
+    }
+
+    .decor {
+      right: -40px;
+      top: -40px;
+      width: 650px;
+    }
   }
 }

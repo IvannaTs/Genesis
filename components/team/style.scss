@@ -41,7 +41,6 @@
       list-style: none;
       @include justify-center;
 
-      // column-count: 4;
       li {
         display: block;
         margin-left: 42px;
@@ -49,7 +48,22 @@
         img {
           margin: auto;
           mix-blend-mode: luminosity;
+          transition: mix-blend-mode $transitin-timles;
         }
+
+        .opacity-logo {
+          opacity: .75;
+        }
+        .min-cufra {
+          height: 35px;
+          width: auto;
+        }
+        
+      }
+
+      li:hover img{
+        mix-blend-mode: normal;
+        opacity: 1;
       }
 
       li:first-child {

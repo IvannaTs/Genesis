@@ -107,7 +107,7 @@
 @mixin text-h1 {
     @include Soniano;
     font-size: 70px;
-    line-height: 76px;
+    line-height: 110%;
 
     @include _1024 {
         font-size: 62px;
@@ -115,6 +115,10 @@
 
     @include _650 {
         font-size: 54px;
+    }
+
+    @include _468 {
+        font-size: 48px;
     }
 }
 

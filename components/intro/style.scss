@@ -1,15 +1,24 @@
 .intro {
+  height: 100vh;
   background-image: url('assets/img/intro/bg-intro.jpg');
   background-color: $colorBlue;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding-top: 126px;
-  padding-bottom: 86px;
+  // padding-top: 126px;
+  // padding-bottom: 86px;
   color: $colorWhite !important;
   text-align: center;
+  
+  // @include justify-center;
 
+  .intro-wrap {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    
+    // margin: auto;
+  }
   .main-titile {
     padding-top: 55px;
     padding-bottom: 42px;
@@ -25,7 +34,7 @@
     .marquee-content {
 
       display: flex;
-      animation: scroll 30s infinite linear;
+      animation: scroll 20s infinite linear;
 
       .decor-img {
         @include justify-center;
@@ -88,8 +97,8 @@
 
 @include _1024 {
   .intro {
-    padding-top: 106px;
-    padding-bottom: 76px;
+    // padding-top: 106px;
+    // padding-bottom: 76px;
     
     .main-titile {
       padding-top: 45px;
@@ -177,8 +186,8 @@
 }
 @include _650 {
   .intro {
-    padding-top: 90px;
-    padding-bottom: 66px;
+    // padding-top: 90px;
+    // padding-bottom: 66px;
     .main-titile {
       padding-top: 38px;
       padding-bottom: 28px;
@@ -217,6 +226,14 @@
           }
         }
       }
+    }
+  }
+}
+@include _468 {
+  .intro {
+    .intro-wrap {
+      padding-top: 90px;
+      padding-bottom: 66px;
     }
   }
 }

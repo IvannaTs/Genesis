@@ -5,19 +5,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  // padding-top: 126px;
-  // padding-bottom: 86px;
   color: $colorWhite !important;
   text-align: center;
-  
-  // @include justify-center;
+  @include justify-center;
 
   .intro-wrap {
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-    
-    // margin: auto;
+    margin: auto;
   }
   .main-titile {
     padding-top: 55px;
@@ -34,7 +27,7 @@
     .marquee-content {
 
       display: flex;
-      animation: scroll 20s infinite linear;
+      animation: scroll 90s infinite linear;
 
       .decor-img {
         @include justify-center;
@@ -97,8 +90,6 @@
 
 @include _1024 {
   .intro {
-    // padding-top: 106px;
-    // padding-bottom: 76px;
     
     .main-titile {
       padding-top: 45px;
@@ -147,6 +138,12 @@
 }
 @include _768 {
   .intro {
+    .intro-content {
+      width: 650px;
+      .button-box__light {
+        margin-top: 20px !important;
+      }
+    }
     .marquee {
       .marquee-content {
         .decor-img {
@@ -186,8 +183,9 @@
 }
 @include _650 {
   .intro {
-    // padding-top: 90px;
-    // padding-bottom: 66px;
+    .intro-content {
+      width: 450px;
+    }
     .main-titile {
       padding-top: 38px;
       padding-bottom: 28px;
@@ -231,9 +229,8 @@
 }
 @include _468 {
   .intro {
-    .intro-wrap {
-      padding-top: 90px;
-      padding-bottom: 66px;
+    .intro-content {
+      width: 390px;
     }
   }
 }
